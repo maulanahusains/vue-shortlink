@@ -1,4 +1,12 @@
 <script setup>
+  import InfoModalWindow from '../components/Modals/InfoModalWindow.vue';
+  import useModalStore from '../stores/useModalStore';
+
+  const store = useModalStore();
+
+  function openInfoModal() {
+    store.openModal({ component: InfoModalWindow })
+  }
 </script>
 
 <template>
@@ -10,7 +18,7 @@
       <ol>
         <li>
           Judul
-          <button class="btn btn-info">details</button>
+          <button class="btn btn-info" @click="openInfoModal">details</button>
         </li>
       </ol>
     </section>
