@@ -1,14 +1,15 @@
 <script>
-  import { Teleport, onMounted } from 'vue';
+  import { Teleport, Transition, onMounted } from 'vue';
   import useModalStore from '../../stores/useModalStore';
 
   export default {
     setup() {
-      const store = useModalStore();
-      console.log(store);
-      return store;
-    }
-  }
+        const store = useModalStore();
+        console.log(store);
+        return store;
+    },
+    components: { Transition }
+}
 </script>
 <template>
   <Teleport to="body">
