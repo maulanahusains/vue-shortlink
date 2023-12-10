@@ -1,1 +1,6 @@
-<template></template>
+<template>
+  cuk
+</template>
+
+<script setup>
+</script>

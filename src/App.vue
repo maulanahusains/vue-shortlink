@@ -4,7 +4,7 @@
 
 <template>
   <Nav />
-  <route-view></route-view>
+  <router-view></router-view>
 </template>
 
 <style scoped>
