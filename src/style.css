@@ -13,6 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
 
 .btn:hover {
   opacity: 1;

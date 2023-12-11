@@ -27,10 +27,6 @@
 </template>
 
 <style scoped>
-  .container {
-    width: 90%;
-    margin: 0 auto;
-  }
 
   th {
     padding: 0.25rem;

@@ -31,8 +31,4 @@
     display: flex;
     gap: 0.5rem;
   }
-  .container {
-    width: 90%;
-    margin: 0 auto;
-  }
 </style>

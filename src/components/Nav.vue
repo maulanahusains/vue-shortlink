@@ -8,7 +8,7 @@
   <header>
     <nav class="container nav">
       <router-link to="/" style="text-decoration: none; color: white;">
-        <h1 class="brand-title">Bitly</h1>
+        <h1 class="brand-title">Short.in</h1>
       </router-link>
       <div class="menu">
         <router-link class="menu-item" :class="{active: currentPath.path == '/short'}" to="/short">Short a link</router-link>
