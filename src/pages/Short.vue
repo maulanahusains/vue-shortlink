@@ -13,8 +13,8 @@
       </div>
       <div class="custom-alias">
         <div class="checkbox">
-          <input type="checkbox" v-model="inputAliases">
-          <label for="">Custom Alias</label>
+          <input type="checkbox" id="ca" v-model="inputAliases">
+          <label for="ca">Custom Alias</label>
         </div>
         <div v-if="inputAliases">
           <input type="text" placeholder="urlbae.com/aliases">
