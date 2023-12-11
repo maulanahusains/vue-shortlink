@@ -12,3 +12,27 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+.btn:hover {
+  opacity: 1;
+}
+
+.btn {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.btn-info {
+  border: 0;
+  color: white;
+  text-decoration: none;
+  opacity: 0.7;
+  background-color: rgb(0, 17, 255);
+}
+.btn-primary {
+  color: white;
+  text-decoration: none;
+  opacity: 0.7;
+  background-color: rgb(153, 0, 255);
+}

@@ -33,7 +33,7 @@
   .menu {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0.5rem;
   }
 
   .menu .menu-item:hover {

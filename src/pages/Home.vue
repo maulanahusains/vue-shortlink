@@ -1,12 +1,4 @@
 <script setup>
-  import InfoModalWindow from '../components/Modals/InfoModalWindow.vue';
-  import useModalStore from '../stores/useModalStore';
-
-  const store = useModalStore();
-
-  function openInfoModal() {
-    store.openModal({ component: InfoModalWindow })
-  }
 </script>
 
 <template>
@@ -15,37 +7,29 @@
       <h3>Your 5 last shortened link</h3>
       <router-link class="btn btn-primary" to="/short">Short new link</router-link>
       
-      <ol>
-        <li>
-          Judul
-          <button class="btn btn-info" @click="openInfoModal">details</button>
-        </li>
-      </ol>
+      <table class="table">
+        <tbody>
+          <tr>
+            <td>1.</td>
+            <td>Judul</td>
+            <td>
+              <button class="btn btn-info">Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </section>
   </main>
 </template>
 
 <style scoped>
-  .btn:hover {
-    opacity: 1;
-  }
-  .btn {
-    padding: 4px 8px;
-    border-radius: 5px;
+  .table {
+    margin-top: 1rem;
   }
 
-  .btn-info {
-    border: 0;
-    color: white;
-    text-decoration: none;
-    opacity: 0.7;
-    background-color: rgb(153, 0, 255);
-  }
-  .btn-primary {
-    color: white;
-    text-decoration: none;
-    opacity: 0.7;
-    background-color: rgb(153, 0, 255);
+  tr {
+    display: flex;
+    gap: 0.5rem;
   }
   .container {
     width: 90%;

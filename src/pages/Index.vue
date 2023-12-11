@@ -27,32 +27,17 @@
 </template>
 
 <style scoped>
-  .btn:hover {
-    opacity: 1;
-  }
-  .btn {
-    padding: 4px 8px;
-    border-radius: 5px;
-  }
-
-  .btn-info {
-    border: 0;
-    color: white;
-    text-decoration: none;
-    opacity: 0.7;
-    background-color: rgb(153, 0, 255);
-  }
   .container {
     width: 90%;
     margin: 0 auto;
   }
 
   th {
-    padding: 4px;
+    padding: 0.25rem;
   }
 
   td {
-    padding: 16px;
+    padding: 1rem;
   }
 
   table {

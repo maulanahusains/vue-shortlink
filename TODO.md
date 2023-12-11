@@ -10,6 +10,7 @@ Project Description
 
 ### In Progress
 
+- [ ] Beautify Layouts  
 
 ### Done ✓
 
