@@ -1,4 +1,17 @@
 <script setup>
+  import { inject } from 'vue';
+
+  const axios = inject('axios');
+
+  function getList() {
+    axios.get('https://urlbae.com/api/urls')
+    .header
+    .then(response => {
+      console.log(response.data);
+    });
+  }
+
+  getList()
 </script>
 
 <template>
