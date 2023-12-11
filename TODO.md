@@ -10,9 +10,9 @@ Project Description
 
 ### In Progress
 
-- [ ] Beautify Layouts  
 
 ### Done ✓
 
+- [x] Beautify Layouts  
 - [x] Halaman Shorten  
 
