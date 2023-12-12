@@ -3,9 +3,8 @@
 
   const axios = inject('axios');
 
-  function getList() {
-    axios.get('https://urlbae.com/api/urls')
-    .header
+  async function getList() {
+    await axios.get('http://localhost:3000/api/urls', { headers: { 'Authorization': `Bearer ad7c97ff8cfffc0ad8f2bb3f144e7b2e`} })
     .then(response => {
       console.log(response.data);
     });
