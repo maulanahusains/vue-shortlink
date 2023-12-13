@@ -14,6 +14,6 @@ const app = createApp(App)
   .use(pinia)
   .use(router);
 
-// axios.defaults.headers.common['Authorization'] = import.meta.env.API_TOKEN;
+axios.defaults.headers.common['Authorization'] = 'Bearer ad2557761e2401df23b1abb5a9992a43';
 app.provide('axios', app.config.globalProperties.axios)
 app.mount('#app');

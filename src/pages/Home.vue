@@ -4,9 +4,12 @@
   const axios = inject('axios');
 
   async function getList() {
-    await axios.get('http://localhost:3000/api/urls', { headers: { 'Authorization': `Bearer anjay-token`} })
+    await axios.get('http://localhost:3000/api/account')
     .then(response => {
       console.log(response.data);
+    })
+    .catch(err => {
+      console.log(err)
     });
   }
 
