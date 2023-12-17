@@ -1,6 +1,7 @@
 <script setup>
   import { inject, ref } from 'vue';
 
+  const axios = inject('axios');
   const inputAliases = ref(false);
   const shortened = ref(false);
 </script>
