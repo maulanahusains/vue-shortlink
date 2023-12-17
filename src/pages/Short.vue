@@ -4,6 +4,10 @@
   const axios = inject('axios');
   const inputAliases = ref(false);
   const shortened = ref(false);
+
+  async function postData(payload) {
+    
+  }
 </script>
 
 <template>
