@@ -1,4 +1,23 @@
 <script setup>
+  import { inject, onBeforeMount, ref } from 'vue';
+
+  const axios = inject('axios');
+  const data = ref({});
+
+  async function getList() {
+    await axios.get('/api/urls')
+    .then(response => {
+      console.log(response.data)
+      data.value = response.data;
+    })
+    .catch(err => {
+      console.log(err)
+    });
+  }
+
+  onBeforeMount(async () => {
+    await getList();
+  });
 </script>
 
 <template>
@@ -9,9 +28,9 @@
       
       <table class="table">
         <tbody>
-          <tr>
-            <td>1.</td>
-            <td>Judul</td>
+          <tr v-for="item, index in data.data.urls">
+            <td>{{ index + 1 }}.</td>
+            <td>{{ item.title || item.longurl }}</td>
             <td>
               <button class="btn btn-info">Details</button>
             </td>
