@@ -1,5 +1,5 @@
 <script setup>
-  import { ref } from 'vue';
+  import { inject, ref } from 'vue';
 
   const inputAliases = ref(false);
   const shortened = ref(false);
