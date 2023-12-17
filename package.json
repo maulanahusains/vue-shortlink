@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "host": "vite --host",
+    "server": "node server",
     "build": "vite build",
     "preview": "vite preview"
   },
