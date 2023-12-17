@@ -30,7 +30,7 @@
         <tbody>
           <tr v-for="item, index in data.data.urls">
             <td>{{ index + 1 }}.</td>
-            <td>{{ item.title }}</td>
+            <td>{{ item.title || item.longurl }}</td>
             <td>
               <button class="btn btn-info">Details</button>
             </td>

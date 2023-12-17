@@ -10,6 +10,7 @@ app.use(cors());
 
 app.use('/', async (req, res) => {
   try {
+    // console.log(req.body)
     const response = await axios({
       method: req.method,
       url: `https://urlbae.com${req.path}`,
@@ -25,7 +26,9 @@ app.use('/', async (req, res) => {
     res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
 
     res.send(response.data);
+    console.log(response.data)
   } catch (error) {
+    console.log(error)
     res.status(500).send('Internal Server Error');
   }
 });
