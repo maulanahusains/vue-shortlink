@@ -1,7 +1,10 @@
-# Vue 3 + Vite
+# Short.in
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Simple project that i make to strenghten my vue skills. using [Vue Router](https://www.npmjs.com/package/vue-router) to make SPA(Single Page App), [Axios](https://www.npmjs.com/package/axios) to fetch data, [URLBAE](https://urlbae.com/developers) that provide API shorturl. And i know this project isnt good enough, but for me this project had me know deeper about how i make component with vue and how i use API.
 
-## Recommended IDE Setup
+# Credit
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- [Urlbae as a API provider](https://urlbae.com/developers)
+- [Vue 3 for frontend](https://vuejs.org/)
+- [Axios](https://www.npmjs.com/package/axios)
+- [Vue Router](https://www.npmjs.com/package/vue-router)
