@@ -1,7 +1,6 @@
 <script setup>
   import { inject, ref } from 'vue';
-  import useClipboard from 'vue-clipboard3'
-
+  import useClipboard from 'vue-clipboard3';
 
   const { toClipboard } = useClipboard()
   const axios = inject('axios');
@@ -22,13 +21,13 @@
   }
 
   const copy = async () => {
-      try {
-        await toClipboard(shortened.value.link)
-        alert('Copied to clipboard')
-      } catch (e) {
-        console.error(e)
-      }
+    try {
+      await toClipboard(shortened.value.link)
+      alert('Copied to clipboard')
+    } catch (e) {
+      console.error(e)
     }
+  }
 
 </script>
 

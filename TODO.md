@@ -6,10 +6,10 @@ Project Description
 
 ### Todo
 
-- [ ] Modal  
 
 ### In Progress
 
+- [ ] Modal  
 
 ### Done ✓
 
